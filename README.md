@@ -2,9 +2,7 @@
 
 Ayudamos a la Comunidad Latina a Preparar su Declaraion de Impuestos, ITIN. 
 
-Servicio de preparación de la declaración de impuestos
-
-estamos en la rama mejor,, nooo ahora es la main rama
+ahora si se acabo esto
 
 ## Sitio Web
 

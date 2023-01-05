@@ -1,8 +1,6 @@
 # Solay Tax Service
 
-Ayudamos a la Comunidad Latina a Preparar su Declaraion de Impuestos, ITIN. 
-
-ahora si se acabo esto
+Ayudamos a la Comunidad Latina a Preparar su Declaraion de Impuestos, ITIN.
 
 ## Sitio Web
 

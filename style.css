@@ -276,6 +276,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--first-color);
+  transition: color 0.5s ease-out;
 }
 .menu a:hover {
   color: var(--white-color);

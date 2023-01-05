@@ -240,8 +240,9 @@
   background-color: var(--hero-opacity-color);
 }
 .hero-image-title {
-  font-size: 7.5vw;
+  font-size: 7vw;
   color: var(--hero-text-color);
+  margin-bottom: 2rem;
 }
   /* ********** Menu ********** */
 .menu-btn {
@@ -479,14 +480,8 @@ progress::-moz-progress-bar {
 }
 .logo a {
   color: var(--first-color);
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-decoration: none;
-}
-.logo svg{
-  width: 2rem;
-  height: 2rem;
-  fill: var(--first-color);
 }
 .portfolio-card {
   position: relative;

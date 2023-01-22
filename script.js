@@ -53,7 +53,7 @@
   });
 })(document);
 
-/* tabla de contactos */
+/* tabla de costumers */
 let contenido = document.querySelector('#contenido');
 function traer() {
   fetch('tabla.json')
@@ -78,4 +78,66 @@ function traer() {
         </tr>
       `;
     }
+}
+/* tabla de contactos */
+let contenido1 = document.querySelector('#contenido1');
+function traer1() {
+  fetch('./data/Contact.json')
+    .then( res => res.json())
+    .then( datos => {
+      tabla1(datos);
+    });
+  }
+  function tabla1(datos) {
+    contenido1.innerHTML ="";
+    console.log(datos.contact[0].id);
+    /* for (const valor of datos) {
+      contenido1.innerHTML += `
+        <tr>
+          <th scope="row">${valor.id + 1}</th>
+          <td>${valor.firstName}</td>
+          <td>${valor.phoneNumber}</td>
+          <td>${valor.payDone
+            ?"activo"
+            :"inactivo"}</td>
+          <td>${valor.cashPay}</td>
+          <td>${valor.thePay}</td>
+        </tr>
+      `;
+    } */
+}
+/* leer texto TXT */
+let contenido2 = document.querySelector('#contenido2');
+function traer2() {
+  fetch('texto.txt')
+    .then( data => data.text())
+    .then( data => {
+      tabla2(data);
+    });
+  }
+  function tabla2(data) {
+    contenido2.innerHTML ="";
+    contenido2.innerHTML = `
+        <h4>
+          <b>${data}</b>
+        </h4>
+      `;
+}
+/* avatar de usuarios */
+let contenido3 = document.querySelector('#contenido3');
+function traer3() {
+  fetch('https://randomuser.me/api/')
+    .then( res => res.json())
+    .then( data => {
+      tabla3(data);
+    });
+  }
+  function tabla3(data) {
+    console.log(data.results[0].email);
+    contenido3.innerHTML ="";
+    contenido3.innerHTML = `
+      <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+      <p>Nombre: ${data.results[0].name.first}</p>
+      <p>Apellido: ${data.results[0].name.last}</p>
+      `;
 }

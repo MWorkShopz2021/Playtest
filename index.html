@@ -86,11 +86,45 @@
     <div class="container full-lg-screen">
       <h2 class="section-title">Servicios</h2>
       <!-- escribir mas pruebas de codigo -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" onclick="traer1()">Obtener1</button>
+      </div>
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Efectivo</th>
+              <th scope="col">Importe</th>
+            </tr>
+          </thead>
+          <tbody id="contenido1">
+            <!-- contenido1 tabla dinamica -->
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
   <section id="contacto" class="contact section">
     <div class="container">
       <h2 class="section-title">Contacto</h2>
+      <div class="container my-5 text-center">
+        <button class="btn btn-danger w-100" onclick="traer2()">Obtener2</button>
+        <div class="mt-5" id="contenido2">
+          <p>saludar</p>
+        </div>
+      </div>
+      <div class="container my-5 text-center">
+        <button class="btn btn-danger w-100" onclick="traer3()">Obtener3</button>
+        <div class="mt-5" id="contenido3">
+          <img src="" alt="rota" width="100px" class="img-fluid rounded-circle">
+          <p>Nombre: </p>
+          <p>Apellido: </p>
+        </div>
+      </div>
       <!-- formulario para enviar datos -->
       <form class="contact-form box-shadow-1">
         <input type="text" name="name" placeholder="Ingresa tu nombre *"

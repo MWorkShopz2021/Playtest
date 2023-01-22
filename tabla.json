@@ -1,6 +1,6 @@
 [
-{"id":0,"firstName":"primer","phoneNumber":"1-800-111","cashPay":11,"payDone":"checked","thePay":3.3},
+{"id":0,"firstName":"primer","phoneNumber":"1-800-111","cashPay":11,"payDone":false,"thePay":3.3},
 {"id":1,"firstName":"segundo","phoneNumber":"2-800-222","cashPay":22,"payDone":"ok","thePay":3.5},
-{"id":2,"firstName":"tercer","phoneNumber":"3-800-333","cashPay":33,"payDone":"false","thePay":2.5},
-{"id":3,"firstName":"cuarto","phoneNumber":"4-800-444","cashPay":44,"payDone":"checked","thePay":2.3}
+{"id":2,"firstName":"tercer","phoneNumber":"3-800-333","cashPay":33,"payDone":true,"thePay":2.5},
+{"id":3,"firstName":"cuarto","phoneNumber":"4-800-444","cashPay":44,"payDone":false,"thePay":2.3}
 ]

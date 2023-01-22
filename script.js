@@ -63,5 +63,19 @@ function traer() {
     });
   }
   function tabla(datos) {
-    console.log(datos);
+    contenido.innerHTML ="";
+    for (const valor of datos) {
+      contenido.innerHTML += `
+        <tr>
+          <th scope="row">${valor.id + 1}</th>
+          <td>${valor.firstName}</td>
+          <td>${valor.phoneNumber}</td>
+          <td>${valor.payDone
+            ?"activo"
+            :"inactivo"}</td>
+          <td>${valor.cashPay}</td>
+          <td>${valor.thePay}</td>
+        </tr>
+      `;
+    }
 }

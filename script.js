@@ -52,3 +52,16 @@
       });
   });
 })(document);
+
+/* tabla de contactos */
+let contenido = document.querySelector('#contenido');
+function traer() {
+  fetch('tabla.json')
+    .then( res => res.json())
+    .then( datos => {
+      tabla(datos);
+    });
+  }
+  function tabla(datos) {
+    console.log(datos);
+}

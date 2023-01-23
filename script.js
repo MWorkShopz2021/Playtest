@@ -79,33 +79,7 @@ function traer() {
       `;
     }
 }
-/* tabla de contactos */
-let contenido1 = document.querySelector('#contenido1');
-function traer1() {
-  fetch('./data/Contact.json')
-    .then( res => res.json())
-    .then( datos => {
-      tabla1(datos);
-    });
-  }
-  function tabla1(datos) {
-    contenido1.innerHTML ="";
-    console.log(datos.contact[0].id);
-    /* for (const valor of datos) {
-      contenido1.innerHTML += `
-        <tr>
-          <th scope="row">${valor.id + 1}</th>
-          <td>${valor.firstName}</td>
-          <td>${valor.phoneNumber}</td>
-          <td>${valor.payDone
-            ?"activo"
-            :"inactivo"}</td>
-          <td>${valor.cashPay}</td>
-          <td>${valor.thePay}</td>
-        </tr>
-      `;
-    } */
-}
+
 /* leer texto TXT */
 let contenido2 = document.querySelector('#contenido2');
 function traer2() {
